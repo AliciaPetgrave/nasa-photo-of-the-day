@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #333333;
+  color:#f9fcfb
+}
+
+
 .App {
   text-align: center;
+  margin: 60px;
 }
 
 .App-logo {
@@ -30,4 +40,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*photo*/
+
+.photo img{
+width:90%;
 }
