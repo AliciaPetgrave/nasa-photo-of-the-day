@@ -6,7 +6,7 @@ function Photo (props){
 
     return (
         <div className = "photo">
-            <img src= {props.photo.url} alt="NASA photo of the day"/>
+            <img src= {props.photo.hdurl} alt="NASA photo of the day"/>
         </div>
     )
 }

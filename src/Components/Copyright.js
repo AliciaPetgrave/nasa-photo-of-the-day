@@ -6,7 +6,7 @@ function Copyright (props){
 
     return (
         <div className="copyright">
-            <p>{props.copy.copyright}</p>
+            <p>© {props.copy.copyright}</p>
         </div>
     )
 }
