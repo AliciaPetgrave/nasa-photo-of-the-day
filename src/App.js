@@ -6,7 +6,23 @@ import Date from "./Components/Date"
 import Photo from "./Components/Photo"
 import Description from "./Components/Description"
 import Copyright from "./Components/Copyright"
+import styled from "styled-components"
 
+
+const Titlestyle = styled.h1`
+    display:flex;
+    justify-content:center;
+    padding:20px 0;
+`;
+
+const Container = styled.div`
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #333333;
+    color:#f9fcfb;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+`;
 
 function App() {
   //state
@@ -26,16 +42,16 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <h1>
+    <Container>
+      <Titlestyle>
         NASA Photo of the Day 🚀!
-      </h1>
+      </Titlestyle>
       <Photo photo={data}/>
       <Title data = {data}/>
       <Date mydate={data}/>
       <Description desc={data}/>
       <Copyright copy={data}/>
-    </div>
+    </Container>
   );
 }
 
